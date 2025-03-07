@@ -62,9 +62,7 @@ python medium_query.py
 
 ```
 
-### What is Calculated TTFT?
-
-What is Calculated TTFT?
+### Calculated TTFT
 
 ```
 start_time = time.perf_counter()
