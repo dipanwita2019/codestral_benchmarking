@@ -23,6 +23,10 @@ ollama show codestral
 ```
 
 ###  Install Python
+
+```
+https://www.python.org/downloads/
+```
 Ensure Python 3.8+ is installed.
 
 #### Windows
