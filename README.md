@@ -9,18 +9,18 @@ This repository benchmarks the **Codestral model** using **Ollama** to generate 
 ###  Install Ollama (AI Model Manager)
 Ollama is required to run the **Codestral** model. Install it based on your OS:
 
-#### **Windows**
+#### Windows
 Download and install Ollama from:
 [Ollama Official Website](https://ollama.com/download)
 
 
-### ** Install Python**
+###  Install Python
 Ensure Python 3.8+ is installed.
 
-#### **Windows**
+#### Windows
 Download and install Python from:  Python Official Website.
 
-### ** Clone the GitHub Repository **
+###  Clone the GitHub Repository 
 Run the following command to download this repository:
 
 ```
@@ -37,8 +37,33 @@ Navigate to the Python Scripts
 ```
 cd python_scripts
 ```
-### ** Running the Benchmark Scripts **
+###  Running the Benchmark Scripts 
 The repository contains three Python scripts, each corresponding to different complexity levels:
+
+| Left |  Center  | Right |
+|:-----|:--------:|------:|
+| L0   | **bold** | $1600 |
+| L1   |  `code`  |   $12 |
+| L2   | _italic_ |    $1 |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
