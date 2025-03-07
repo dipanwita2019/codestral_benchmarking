@@ -40,11 +40,11 @@ cd python_scripts
 ###  Running the Benchmark Scripts 
 The repository contains three Python scripts, each corresponding to different complexity levels:
 
-| Left |  Center  | Right |
+| Script |  Complexity  | What it Generates? |
 |:-----|:--------:|------:|
-| L0   | **bold** | $1600 |
-| L1   |  `code`  |   $12 |
-| L2   | _italic_ |    $1 |
+| medium_query.py   | `Medium`	 | A Merge Sort function in Python |
+|high_query.py	   |  `High`  |   A FastAPI authentication system with JWT |
+| super_complex_query.py	   | `Super Complex` |    A PyTorch deep learning model for CIFAR-10 classification |
 
 
 
