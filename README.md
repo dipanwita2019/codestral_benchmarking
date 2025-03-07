@@ -37,22 +37,53 @@ Navigate to the Python Scripts
 ```
 cd python_scripts
 ```
-###  Running the Benchmark Scripts 
+##  Running the Benchmark Scripts 
 The repository contains three Python scripts, each corresponding to different complexity levels:
 
 | Script |  Complexity  | What it Generates? |
 |:-----|:--------:|------:|
 | medium_query.py   | `Medium`	 | A Merge Sort function in Python |
 |high_query.py	   |  `High`  |   A FastAPI authentication system with JWT |
-| super_complex_query.py	   | `Super Complex` |    A PyTorch deep learning model for CIFAR-10 classification |
+| complex_query.py	   | `Super Complex` |    A PyTorch deep learning model for CIFAR-10 classification |
 
+Run each script to generate the respective Python code and measure TTFT (Time to First Token).
 
+### Run the Medium Query Script
 
+```
+python medium_query.py
 
+```
 
+### What is Calculated TTFT?
 
+What is Calculated TTFT?
 
+```
+start_time = time.perf_counter()
+stream = ollama.chat(model='codestral', messages=[{"role": "user", "content": query}], stream=True)
+first_token_time = None
 
+for chunk in stream:
+    if first_token_time is None:
+        first_token_time = time.perf_counter()
+        ttft = first_token_time - start_time
+        print(f" First token received! TTFT: {ttft:.4f} seconds\n")
+
+```
+1. time.perf_counter() provides high-precision timing.
+2. The loop captures when the first response token arrives.
+3. TTFT is displayed for each script in seconds.
+
+## Support
+### If you encounter issues:
+
+1. Check if Ollama is installed properly using:
+```
+ollama version
+
+```
+2. Ensure Python 3.8+ is installed.
 
 
 
