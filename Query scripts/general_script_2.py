@@ -29,8 +29,8 @@ for chunk in stream:
         ttft = first_token_time - overall_start_time  # Compute TTFT (query processing excluded)
         print(f" First token received! TTFT (excluding query time): {ttft:.4f} seconds\n")
     
-    if isinstance(chunk, dict) and "message" in chunk and "content" in chunk["message"]:
-        generated_code += chunk["message"]["content"]
+    # Store the full response
+    generated_code += chunk['message']['content']
 
 # Step 3: Capture overall time after receiving the last token
 overall_end_time = time.perf_counter()
