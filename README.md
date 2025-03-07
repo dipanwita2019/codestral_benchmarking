@@ -20,6 +20,13 @@ Ensure Python 3.8+ is installed.
 #### Windows
 Download and install Python from:  Python Official Website.
 
+### Install the Ollama Python Package
+To interact with Ollama via Python, install the Ollama Python API:
+
+```
+pip install ollama
+```
+
 ###  Clone the GitHub Repository 
 Run the following command to download this repository:
 
