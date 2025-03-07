@@ -13,6 +13,8 @@ Ollama is required to run the **Codestral** model. Install it based on your OS:
 Download and install Ollama from:
 [Ollama Official Website](https://ollama.com/download)
 
+### Install Codestral ###
+ollama pull codestral
 
 ###  Install Python
 Ensure Python 3.8+ is installed.
