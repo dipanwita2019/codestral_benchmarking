@@ -97,6 +97,9 @@ ttc = overall_end_time - overall_start_time  # Compute Time to Completion (TTC)
 2. The loop captures when the first response token arrives.
 3. TTFT is displayed for each script in seconds.
 
+## Verify Output
+Review the output file generated after running each script to make sure the codestral model is the generating code as instructed and not simple text. 
+
 ## Support
 ### If you encounter issues:
 
