@@ -19,7 +19,7 @@ print(" Measuring Time to First Token (TTFT)...")
 start_time = time.perf_counter()
 
 # Step 3: Send query using streaming mode to capture first token instantly
-print("💡 Querying the model for FastAPI authentication implementation...")
+print(" Querying the model for FastAPI authentication implementation...")
 stream = ollama.chat(model='codestral', messages=[{"role": "user", "content": query}], stream=True)
 
 # Step 4: Capture time when the first token arrives

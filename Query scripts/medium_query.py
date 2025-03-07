@@ -7,7 +7,7 @@ query = "Write a Python function to sort a list of numbers using the merge sort 
 # Output file where the generated code will be saved
 output_file = "merge_sort.py"
 
-print("\n🚀 Starting the script...\n")
+print("\n Starting the script...\n")
 
 # Step 1: Warm-up Query (Ensures the model is preloaded in memory)
 print("Sending a warm-up query to preload the model...")
@@ -19,7 +19,7 @@ print("Measuring Time to First Token (TTFT)...")
 start_time = time.perf_counter()
 
 # Step 3: Send query using streaming mode (to capture first token instantly)
-print("💡 Querying the model for Merge Sort implementation...")
+print(" Querying the model for Merge Sort implementation...")
 stream = ollama.chat(model='codestral', messages=[{"role": "user", "content": query}], stream=True)
 
 # Step 4: Capture time when the first token arrives
