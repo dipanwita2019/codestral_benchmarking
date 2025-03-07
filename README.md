@@ -71,15 +71,26 @@ python general_script_1.py
 ### Calculate TTFT
 
 ```
-start_time = time.perf_counter()
 stream = ollama.chat(model='codestral', messages=[{"role": "user", "content": query}], stream=True)
+
+# **NOW Start Timing** (Correct placement)
+overall_start_time = time.perf_counter()  # Start timing AFTER sending the query
+
 first_token_time = None
+generated_code = ""
 
 for chunk in stream:
     if first_token_time is None:
-        first_token_time = time.perf_counter()
-        ttft = first_token_time - start_time
-        print(f" First token received! TTFT: {ttft:.4f} seconds\n")
+        first_token_time = time.perf_counter()  # Capture TTFT after first response token
+        ttft = first_token_time - overall_start_time  # Compute TTFT (query processing excluded)
+        print(f" First token received! TTFT (excluding query time): {ttft:.4f} seconds\n")
+    
+    # Store the full response
+    generated_code += chunk['message']['content']
+
+# Step 3: Capture overall time after receiving the last token
+overall_end_time = time.perf_counter()
+ttc = overall_end_time - overall_start_time  # Compute Time to Completion (TTC)
 
 ```
 1. time.perf_counter() provides high-precision timing.
