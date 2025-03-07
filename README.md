@@ -59,18 +59,12 @@ cd python_scripts
 ##  Running the Benchmark Scripts 
 The repository contains three Python scripts, each corresponding to different complexity levels:
 
-| Script |  Complexity  | What it Generates? |
-|:-----|:--------:|------:|
-| medium_query.py   | `Medium`	 | A Merge Sort function in Python |
-|high_query.py	   |  `High`  |   A FastAPI authentication system with JWT |
-| complex_query.py	   | `Super Complex` |    A PyTorch deep learning model for CIFAR-10 classification |
-
-Run each script to generate the respective Python code and measure TTFT (Time to First Token).
+Run each script to generate the respective Python code and measure TTFT (Time to First Token) and Time to Completion(TTC).
 
 ### Run the Medium Query Script
 
 ```
-python medium_query.py
+python general_script_1.py
 
 ```
 
