@@ -14,7 +14,13 @@ Download and install Ollama from:
 [Ollama Official Website](https://ollama.com/download)
 
 ### Install Codestral ###
+```
 ollama pull codestral
+```
+
+```
+ollama show codestral
+```
 
 ###  Install Python
 Ensure Python 3.8+ is installed.
