@@ -6,7 +6,7 @@ This repository benchmarks the **Codestral model** using **Ollama** to generate 
 
 ## Prerequisites - Setup Guide
 
-### ** Install Ollama (AI Model Manager)**
+###  Install Ollama (AI Model Manager)
 Ollama is required to run the **Codestral** model. Install it based on your OS:
 
 #### **Windows**
