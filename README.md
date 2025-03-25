@@ -41,9 +41,9 @@ pip install ollama
 ### Install git
 #### Windows
 
-...
+```
 https://www.gitforwindows.org
-...
+```
 Click the download button
 Install, using the defaults are fine
 
