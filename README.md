@@ -27,7 +27,7 @@ ollama show codestral
 ```
 https://www.python.org/downloads/
 ```
-Ensure Python 3.8+ is installed.
+Install Python 3.8+; check the Add python.exe to PATH
 
 #### Windows
 Download and install Python from:  Python Official Website.
