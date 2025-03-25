@@ -38,6 +38,13 @@ To interact with Ollama via Python, install the Ollama Python API:
 ```
 pip install ollama
 ```
+### Install git
+#### Windows
+...
+https://www.gitforwindows.org
+...
+Click the download button
+Install, using the defaults are fine
 
 ###  Clone the GitHub Repository 
 Run the following command to download this repository:
