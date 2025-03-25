@@ -40,6 +40,7 @@ pip install ollama
 ```
 ### Install git
 #### Windows
+
 ...
 https://www.gitforwindows.org
 ...
