@@ -62,7 +62,7 @@ cd codestral_benchmarking
 
 Navigate to the Python Scripts
 ```
-cd python_scripts
+cd "Query Scripts"
 ```
 ##  Running the Benchmark Scripts 
 The repository contains three Python scripts, each corresponding to different complexity levels:
